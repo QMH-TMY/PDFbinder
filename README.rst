@@ -11,7 +11,7 @@ Usage
 
 ::
 
-    $ Pdfbinder [s1.pdf] [s2.pdf]... [output.pdf]
+    $ PDFbinder [s1.pdf] [s2.pdf]... [output.pdf]
 
 	Just for fun!
 		Jan 6,2019. 
