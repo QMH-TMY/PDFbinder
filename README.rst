@@ -13,6 +13,5 @@ Usage
 
     $ PDFbinder [s1.pdf] [s2.pdf]... [output.pdf]
 
-	Just for fun!
-		Jan 6,2019. 
+		Jan 10,2019. 
 		Chengdu, China.
