@@ -30,5 +30,5 @@ Usage2
 
 ::
 
-    $ python PDFcuter.py cwTeX.pdf 1.pdf 1 4
+    $ python PDFcuter.py input.pdf output.pdf 1 4
 
