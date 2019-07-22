@@ -14,12 +14,18 @@ Requirement
 -----------
 PyPDF2 
 
-Usage
+Usage1
 -----
 
 ::
 
     $ PDFbinder s1.pdf s2.pdf... output.pdf
-    $ PDFcuterr s1.pdf output.pdf start end
+
+Usage2
+-----
+
+::
+
+    $ python PDFcuter.py cwTeX.pdf 1.pdf 1 4
 
 		Jun 22,2019. 
