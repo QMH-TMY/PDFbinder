@@ -23,7 +23,7 @@ Usage1
 
 ::
 
-    $ PDFbinder s1.pdf s2.pdf... output.pdf
+    $ python PDFbinder.py s1.pdf s2.pdf... output.pdf
 
 Usage2
 -----
