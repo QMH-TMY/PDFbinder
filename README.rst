@@ -14,6 +14,10 @@ Requirement
 -----------
 PyPDF2 
 
+::
+
+    $ sudo pip install PyPDF2
+
 Usage1
 -----
 
@@ -28,4 +32,3 @@ Usage2
 
     $ python PDFcuter.py cwTeX.pdf 1.pdf 1 4
 
-		Jun 22,2019. 
