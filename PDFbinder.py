@@ -44,7 +44,7 @@ class PDFcombiner():
         if self.ispdf():
             pdfWriter = PyPDF2.PdfFileWriter()
             for pdf in self.pdflist[1:-1]:
-                pdfReader = PyPDF2.PdfFileReader(file(pdf,'rb'))
+                pdfReader = PyPDF2.PdfFileReader(open(pdf,'rb'))
                 for page in range(pdfReader.numPages):
                     pageObj = pdfReader.getPage(page)
                     pdfWriter.addPage(pageObj)
