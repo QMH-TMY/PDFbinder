@@ -15,8 +15,7 @@
 #    under the License.
 #
 #                            Function Description
-#    transfer txt file to pdf file.
-#    combine multiple pdf files into sigle one pdf.
+#    transfer txt file to pdf file.  #    combine multiple pdf files into sigle one pdf.
 #
 #    Copyright 2019 
 #    All Rights Reserved!
@@ -50,7 +49,7 @@ class PDFcombiner():
                     pdfWriter.addPage(pageObj)
             return pdfWriter
         else:
-            print("Files are not valid pdf file")
+            print("Files are invalid .")
             sys.exit(-1)
 
     def combine(self):
