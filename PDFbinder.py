@@ -59,7 +59,7 @@ class PDFcombiner():
             sys.exit(-1)
 
         pdfWriter = self.addpdfpages()
-        with open(self.output,'wb') as pdfObj:
+        with open(self.output,'wb',encoding='utf-8') as pdfObj:
             pdfWriter.write(pdfObj)
 
 if __name__ == "__main__":
