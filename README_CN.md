@@ -1,7 +1,7 @@
 ### 兼容系统  
+- Linux 
 - Mac OS
 - Windows
-- Unix-like OS
 
 ### PDFbinder & PDFcuter 
 [[English](./README.md)] 命令行pdf文件合并和分割器。

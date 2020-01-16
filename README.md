@@ -1,7 +1,7 @@
 ### Compatible OS  
+- Linux 
 - Mac OS
 - Windows
-- Linux 
 
 ### PDFbinder & PDFcuter 
 [[中文版](./README_CN.m)] Command line interface to merge pdf files and split pdf file.
