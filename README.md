@@ -4,7 +4,7 @@
 - Windows
 
 ### PDFbinder & PDFcuter 
-[[中文版](./README_CN.m)] Command line interface to merge pdf files and split pdf file.
+[[中文版](./README_CN.md)] Command line interface to merge pdf files and split pdf file.
 
 ### requirement 
 	PyPDF2 
