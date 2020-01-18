@@ -14,3 +14,5 @@
     $ python PDFbinder.py s1.pdf s2.pdf ... output.pdf #usage 1
     $ python PDFcuter.py input.pdf output.pdf 1 4      #usage 2
 
+### Support 
+![payment](https://raw.github.com/QMHTMY/share/master/payment.png)
