@@ -18,5 +18,5 @@
     $ python PDFcuter.py input.pdf output.pdf 1 4
 
 ### 我问你资不资持？
-![payment](https://raw.github.com/QMHTMY/share/master/payment.png)
+![payment](./payment.png)
 
