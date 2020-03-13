@@ -4,22 +4,6 @@
 #    Author: Shieber
 #    Date: 2019.07.24
 #
-#                             APACHE LICENSE
-#    Licensed under the Apache License, Version 2.0 (the "License"); you may
-#    not use this file except in compliance with the License. You may obtain
-#    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-#    Unless required by applicable law or agreed to in writing, software
-#    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-#    License for the specific language governing permissions and limitations
-#    under the License.
-#
-#                            Function Description
-#    transfer txt file to pdf file.  #    combine multiple pdf files into sigle one pdf.
-#
-#    Copyright 2019 
-#    All Rights Reserved!
-
 import sys, PyPDF2
 from os.path import basename
 
@@ -40,17 +24,18 @@ class PDFcombiner():
 
     def addpdfpages(self):
         '''向writer中添加pdf页数'''
-        if self.ispdf():
-            pdfWriter = PyPDF2.PdfFileWriter()
-            for pdf in self.pdflist[1:-1]:
-                pdfReader = PyPDF2.PdfFileReader(open(pdf,'rb'))
-                for page in range(pdfReader.numPages):
-                    pageObj = pdfReader.getPage(page)
-                    pdfWriter.addPage(pageObj)
-            return pdfWriter
-        else:
+        if not self.ispdf():
             print("Files are invalid .")
             sys.exit(-1)
+
+        pdfWriter = PyPDF2.PdfFileWriter()
+        for pdf in self.pdflist[1:-1]:
+            pdfReader = PyPDF2.PdfFileReader(open(pdf,'rb'))
+            for page in range(pdfReader.numPages):
+                pageObj = pdfReader.getPage(page)
+                pdfWriter.addPage(pageObj)
+
+        return pdfWriter
 
     def combine(self):
         '''合并写入'''
