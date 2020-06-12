@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 #    Author: Shieber
@@ -15,16 +15,16 @@ class PDFcombiner():
         self.output  = sys.argv[-1] 	#输出文件名
         self.program = basename(sys.argv[0])
 
-    def ispdf(self):
+    def _ispdf(self):
         '''判断输入文件是否全为pdf'''
         for pdf in self.pdflist:
             if not pdf.endswith('.pdf'):
                 return False          	#只要有一个不是pdf后缀就退出
         return True
 
-    def addpdfpages(self):
+    def _add_pdf_pages(self):
         '''向writer中添加pdf页数'''
-        if not self.ispdf():
+        if not self._ispdf():
             print("Files are invalid .")
             sys.exit(-1)
 
@@ -40,10 +40,10 @@ class PDFcombiner():
     def combine(self):
         '''合并写入'''
         if self.pdfnums < 4:
-            print("Usage: %s s1.pdf s2.pdf ... output.pdf"%self.program)
+            print(f"Usage: {self.program} s1.pdf s2.pdf ... output.pdf")
             sys.exit(-1)
 
-        pdfWriter = self.addpdfpages()
+        pdfWriter = self._add_pdf_pages()
         with open(self.output,'wb',encoding='utf-8') as pdfObj:
             pdfWriter.write(pdfObj)
 

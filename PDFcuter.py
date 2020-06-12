@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 #    Author: Shieber
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     elif lnth == 5:
         start,end = int(argv[3]),int(argv[4])
     else:
-        print('Usage: pdfcut file.pdf output.pdf (start) (end)')
+        print('Usage: pdfcut file.pdf output.pdf [start] [end]')
         sys.exit(-1)
 
     pdfname  = argv[1]
